@@ -20,14 +20,17 @@ body {
 
 header {
   height: 110px;
+  width: 100%;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding-block: 10px;
+  padding: 0 10px;
 }
 
 header .site-logo {
+  margin-bottom: 10px;
   color: black;
-  margin-right: auto;
   text-transform: uppercase;
   font-weight: 900;
   font-size: 25px;
@@ -47,7 +50,10 @@ header a {
   text-decoration: none;
   color: #4D4D4D;
   font-weight: 600;
-  padding: 5px 20px;
+}
+
+nav a:not(:last-child) {
+  margin-right: 15px;
 }
 
 header a:hover {
@@ -305,15 +311,23 @@ i[class*='van-type-'] {
 }
 
 .host-nav {
+  padding: 0 10px;
   display: flex;
+  justify-content: space-between;
   margin-bottom: 30px;
 }
 
 .host-nav a {
+  font-size: 13px;
+  line-height: 10px;
   text-decoration: none;
   color: #4D4D4D;
   font-weight: 600;
-  padding: 5px 20px;
+  padding: 5px 0;
+}
+
+.host-nav a:not(:last-child) {
+  margin-right: 5px;
 }
 
 .host-nav a:hover {
@@ -376,7 +390,7 @@ a.is-active {
 }
 
 .host-van-detail>img {
-  height: 160px;
+  height: 110px;
   border-radius: 5px;
   margin-right: 20px;
 }
@@ -384,12 +398,12 @@ a.is-active {
 .host-van-detail-info-text>h3 {
   margin-top: 24px;
   margin-bottom: 5px;
-  font-size: 26px;
+  font-size: 18px;
   font-weight: 700;
 }
 
 .host-van-detail-info-text>h4 {
-  font-size: 20px;
+  font-size: 14px;
   margin-block: 0;
 }
 
@@ -399,18 +413,10 @@ a.is-active {
 }
 
 .host-van-detail-nav a {
+  font-size: 14px;
   text-decoration: none;
   color: #4D4D4D;
   font-weight: 600;
-  padding: 5px 20px;
-}
-
-.host-van-detail-nav a:first-of-type {
-  text-decoration: none;
-  color: #4D4D4D;
-  font-weight: 600;
-  padding: 5px 15px;
-  margin-left: -15px;
 }
 
 .host-van-detail-nav a:hover {
