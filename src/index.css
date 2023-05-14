@@ -281,6 +281,7 @@ i[class*='van-type-'] {
 }
 
 .van-detail img {
+  width: 278px;
   border-radius: 5px;
   margin-block: 47px;
 }
